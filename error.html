@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit" />
+		<meta
+		  name="viewport"
+		  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0"
+		/>
+		<title>登录</title>
+	</head>
+	<body>
+    <!-- <a class="btn w-full">登录失败</a> -->
+    <!-- <h1>登陆失败</h1> -->
+    <span class="icon">❗️</span>
+        <p class="error-message">扫码登录失败，请重试或联系客服。</p>
+        <p class="suggestion">您可以尝试重新扫描二维码或联系客服寻求帮助。</p>
+    <script>
+      var queryString = window.location.search;
+      
+      // 去除开头的问号
+      queryString = queryString.substring(1);
+      // 将查询字符串拆分成参数对
+      var params = queryString.split("&");
+      // 创建一个对象来存储参数
+      var paramsObj = {};
+      params.forEach(function(param) {
+          var keyValue = param.split("=");
+          var key = decodeURIComponent(keyValue[0]);
+          var value = decodeURIComponent(keyValue[1]);
+          paramsObj[key] = value;
+      });
+      
+    </script>
+	</body>
+  
+  <style>
+      body {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         align-items: center;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            .error-message {
+                margin-top: 50px;
+                font-size: 16px;
+                color: red;
+            }
+            .suggestion {
+                margin-top: 20px;
+                font-size: 16px;
+            }
+             .icon {
+                        display: block;
+                        font-size: 40px;
+                        margin: 0 auto;
+                        border: 3px solid red;
+                        border-radius: 50%;
+                        width: 60px;
+                        height:60px;
+                        
+                    }
+    *{
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: initial;
+    }
+    .w-full{
+      width:100%;
+    }
+    .btn{
+      background-color: #0079ff;
+      color: #fff;
+      outline: none;
+      position: relative;
+      display: inline-block;
+      font-weight: 400;
+      white-space: nowrap;
+      text-align: center;
+      background-image: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      user-select: none;
+      touch-action: manipulation;
+      line-height: 1.6666666666666667;
+          
+    }
+  </style>
+</html>

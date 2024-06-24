@@ -1,0 +1,9 @@
+.block {
+  display: block !important;
+}
+.van_uploader_block {
+  display: block;
+}
+.van_uploader_block .van-uploader__wrapper {
+  display: block;
+}

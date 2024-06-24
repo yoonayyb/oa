@@ -1,0 +1,48 @@
+{
+  "code": "200",
+  "msg": "success",
+  "data": {
+    "tableId": 1,
+    "workFlowDef": {
+      "name": "审批"
+    },
+    "directorMaxLevel": 10,
+    "addressBookMaxLevel": 10,
+    "flowPermission": [],
+    "nodeConfig": {
+      "nodeName": "发起人",
+      "type": 0,
+      "priorityLevel": "",
+      "settype": "",
+      "selectMode": "",
+      "selectRange": "",
+      "directorLevel": "",
+      "examineMode": "",
+      "noHanderAction": "",
+      "examineEndDirectorLevel": "",
+      "ccSelfSelectFlag": "",
+      "conditionList": [],
+      "nodeUserList": [],
+      "pointNodeUserList": [],
+      "childNode": {
+        "nodeName": "审核人",
+        "error": false,
+        "type": 1,
+        "beforManager": "",
+        "approverType": 1,
+        "settype": 1,
+        "approverEnd": 1,
+        "selectMode": 0,
+        "selectRange": 0,
+        "directorLevel": 1,
+        "examineMode": 1,
+        "noHanderAction": 2,
+        "examineEndDirectorLevel": 0,
+        "childNode": {},
+        "nodeUserList": [],
+        "pointNodeUserList": []
+      },
+      "conditionNodes": []
+    }
+  }
+}

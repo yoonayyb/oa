@@ -1,0 +1,10 @@
+@import './common';
+@import './variable';
+@import './scrollbar';
+@import './toolbar';
+@import './component';
+@import 'vxe-table/styles/index';
+
+.ant-btn {
+  margin-left: 8px;
+}
